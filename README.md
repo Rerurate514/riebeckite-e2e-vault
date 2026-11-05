@@ -84,11 +84,11 @@ The App needs **Contents: read and write** and **Metadata: read-only**, and must
 
 ## Related documentation
 
-- [Quick Start](https://riebeckite.dev/getting-started/quick-start)
-- [Content location](https://riebeckite.dev/getting-started/content-location)
-- [Separate repositories setup](https://riebeckite.dev/getting-started/separate-repositories-setup)
-- [GitHub Actions deployment](https://riebeckite.dev/guides/deployment/github-actions)
-- [Troubleshooting](https://riebeckite.dev/guides/deployment/github-actions/troubleshooting)
+- [Quick Start](https://riebeckite.dev/docs/getting-started/quick-start)
+- [Content repositories](https://riebeckite.dev/docs/guides/content-repositories/basics)
+- [Separate content repository setup](https://riebeckite.dev/docs/guides/content-repositories/setup)
+- [GitHub Actions deployment](https://riebeckite.dev/docs/guides/deployment/github-actions)
+- [Troubleshooting](https://riebeckite.dev/docs/guides/deployment/github-actions/troubleshooting)
 
 ## License
 
