@@ -68,13 +68,15 @@ To deploy manually, run the site workflow with **Actions → Deploy to Cloudflar
 
 ## GitHub Actions
 
-`.github/workflows/notify-site.yml` requires one secret:
+`.github/workflows/notify-site.yml` requires either a GitHub App or a fallback PAT:
 
-| Secret | Purpose |
-| --- | --- |
-| `SITE_DISPATCH_TOKEN` | Fine-grained token scoped to [the site repository](https://github.com/Rerurate514/riebeckite-e2e-site) with **Contents: read and write**. |
+| Name | Kind | Purpose |
+| --- | --- | --- |
+| `RIEBECKITE_APP_ID` | Secret | GitHub App ID |
+| `RIEBECKITE_APP_PRIVATE_KEY` | Secret | GitHub App private key |
+| `SITE_DISPATCH_TOKEN` | Secret | Optional fallback instead of the GitHub App |
 
-The token is used only to call the repository dispatch API. It is not stored in this repository.
+The App needs **Contents: read and write** and **Metadata: read-only**, and must be installed only on [the site repository](https://github.com/Rerurate514/riebeckite-e2e-site). The workflow mints a short-lived token and uses it only to call the repository dispatch API.
 
 ## Content in this sample
 
@@ -83,10 +85,10 @@ The token is used only to call the repository dispatch API. It is not stored in 
 ## Related documentation
 
 - [Quick Start](https://riebeckite.dev/getting-started/quick-start)
-- [Separate content repository concepts](https://riebeckite.dev/guides/deployment/separate-content-repository/concepts)
-- [Repository split](https://riebeckite.dev/guides/deployment/separate-content-repository/repository-split)
-- [Publishing](https://riebeckite.dev/guides/deployment/separate-content-repository/publishing)
-- [Troubleshooting](https://riebeckite.dev/guides/deployment/separate-content-repository/troubleshooting)
+- [Content location](https://riebeckite.dev/getting-started/content-location)
+- [Separate repositories setup](https://riebeckite.dev/getting-started/separate-repositories-setup)
+- [GitHub Actions deployment](https://riebeckite.dev/guides/deployment/github-actions)
+- [Troubleshooting](https://riebeckite.dev/guides/deployment/github-actions/troubleshooting)
 
 ## License
 
