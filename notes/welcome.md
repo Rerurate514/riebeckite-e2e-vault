@@ -31,3 +31,7 @@ You can link to a folder, too: [[notes]].
 - [[markdown]]
 - [[diagram]]
 - [[attachments]]
+
+## 更新E2E
+
+2026-11-05 repositories のVault更新からSite公開までを確認するための更新です。
